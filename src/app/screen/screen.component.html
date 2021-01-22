@@ -1,0 +1,96 @@
+<div style="text-align: center;width: 100%;">
+    <h1>智能酒窖</h1>
+</div>
+<div>
+    <div>
+     
+        <div class="div1">
+            <div *ngIf="led == 0">
+                <img src="../../assets/img/红灯.png" style="float: left;">
+            </div>
+            <div *ngIf="led == 1">
+                <img src="../../assets/img/绿灯.png" style="float: left;">            
+            </div>
+            <a >LED灯</a>
+          
+        </div>
+       
+        <div class="div1">
+            <div *ngIf="ac == 0">
+                <img src="../../assets/img/红灯.png"  style="float: left;">
+              
+            </div>
+            <div *ngIf="ac == 1">
+                <img src="../../assets/img/绿灯.png" style="float: left;">
+            </div>
+            <a >空调</a>
+        </div>
+        <div class="div1">
+            <div *ngIf="fan == 0">
+                <img src="../../assets/img/红灯.png"  style="float: left;">
+            </div>
+            <div *ngIf="fan == 1">
+                <img src="../../assets/img/绿灯.png"  style="float: left;">
+            </div>
+            <a >窗户</a>
+        </div>
+        <div class="div1">
+            <div *ngIf="furnace == 0">
+                <img src="../../assets/img/红灯.png"  style="float: left;">
+            </div>
+            <div *ngIf="furnace == 1">
+                <img src="../../assets/img/绿灯.png" style="float: left;">
+            </div>
+            <a >加热器</a>
+        </div>
+        <div class="div1">
+            <div *ngIf="Humdplus == 0">
+                <img src="../../assets/img/红灯.png"  style="float: left;">
+            </div>
+            <div *ngIf="Humdplus == 1">
+                <img src="../../assets/img/绿灯.png" style="float: left;">
+            </div>
+            <a >加湿器</a>
+        </div>
+</div>
+<div >
+<div >
+</div>
+</div>
+       
+        <div >
+            <div >               
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                     温度
+                      <span class="badge badge-primary badge-pill">{{value}}℃</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      湿度
+                      <span class="badge badge-primary badge-pill">{{value1}}%</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      二氧化碳浓度
+                      <span class="badge badge-primary badge-pill">{{value2}}%</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      酒精浓度
+                    <span class="badge badge-primary badge-pill">{{value3}}%</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      光照
+                    <span class="badge badge-primary badge-pill">{{value4}}Lx</span>
+                    </li>
+                  </ul>
+            </div>
+            <div class="my-5">
+                <button type="button" class="btn btn-primary btn-lg btn-block"(click)="turnonled()">开灯</button>
+                 <button type="button" class="btn btn-danger btn-lg btn-block"(click)="turnoffled()">关灯</button>
+                <!-- <button type="button" class="btn btn-primary btn-lg btn-block" (click)="turnonled()">开灯</button>
+                <button type="button" class="btn btn-danger btn-lg btn-block my-3" (click)="turnoffled()">关灯</button> -->
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        

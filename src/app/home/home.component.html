@@ -1,0 +1,22 @@
+<!-- <nav class="site-header sticky-top py-1">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">      
+        
+        <a class="py-2 d-none d-md-inline-block" [routerLink]="['screen']">大屏</a>
+        <a class="py-2 d-none d-md-inline-block" [routerLink]="['product']">产品</a>
+        <a class="py-2 d-none d-md-inline-block" [routerLink]="['device']">设备</a>
+    </div>
+</nav>
+<router-outlet></router-outlet> -->
+<ul class="nav nav-pills nav-fill justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link active mx-1" [routerLink]="['screen']">大屏</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active mx-1" [routerLink]="['product']">产品</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active mx-1" [routerLink]="['device']">设备</a>
+    </li>
+</ul>
+
+<router-outlet></router-outlet>
